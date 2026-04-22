@@ -11,31 +11,87 @@
 </header>
 <section>
     <form action="" method="get">
-<fieldset>
-<!--DADOS PESSOAIS-->
+
+<!--<fieldset>
 
 <legend>Dados Pessoais</legend>
 <label for="userName">Nome (Obrigatório)</label>
 <input type="text" name="userName" required>
 <br>
+
 <label for="userAge">Idade</label>
 <input type="number" name="userAge" min="12" max="100" required>
 <br>
+
 <label for="birthDate">Data de nascimento</label>
 <input type="date" name="birthDate">
 <br>
+
 <label for="userEmail">Email (Obrigatório)</label>
 <input type="email" name="userEmail" placeholder="ex: myname@example.com" required>
 <br>
+
 <label for="userPhoneNumber">Telefone</label>
-<input type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="ex: (+351) 912 345 678">
+<input type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="ex: 912 345 678">
 <br>
+
 <label for="userImage">Upload de foto (Opcional)</label>
 <input type="file" accept="image/*" name="userImage">
 <br>
+
+</fieldset>-->
+
+<fieldset>
+<legend>Perfil</legend>
+
+<p>Gênero:</p>
+<input type="radio" name="userGender" value="Feminino">
+<label for="userGender">Feminino</label>
+
+<input type="radio" name="userGender" value="Masculino">
+<label for="userGender">Masculino</label>
+
+<input type="radio" name="userGender" value="notInformed">
+<label for="userGender">Prefiro não informar</label>
+<br>
+
+<label for="maritalStatus">Estado Civil:</label>
+<select name="maritalStatus">
+    <option value="notInformed">Selecione...</option>
+<option value="casado">Casado</option>
+<option value="solteiro">Solteiro</option>
+<option value="divorciado">Divorciado</option>
+<option value="uniao estavel">União Estável</option>
+</select>
+
+<label for="userState">Distrito:</label>
+<select name="userState">
+    <option value="Aveiro">Aveiro</option>
+    <option value="Beja">Beja</option>
+    <option value="Braga">Braga</option>
+    <option value="Bragança">Bragança</option>
+    <option value="Castelo Branco">Castelo Branco</option>
+    <option value="Coimbra">Coimbra</option>
+    <option value="Évora">Évora</option>
+    <option value="Faro">Faro</option>
+    <option value="Guarda">Guarda</option>
+    <option value="Leiria">Leiria</option>
+    <option value="Lisboa">Lisboa</option>
+    <option value="Portalegre">Portalegre</option>
+    <option value="Porto">Porto</option>
+    <option value="Santarém">Santarém</option>
+    <option value="Setúbal">Setúbal</option>
+    <option value="Viana do Castelo">Viana do Castelo</option>
+    <option value="Vila Real">Vila Real</option>
+    <option value="Viseu">Viseu</option>
+</select>
+
+<label for="userCity">Concelho</label>
+<input type="text" name="userCity">
+
+
+
 </fieldset>
-
-
 
 
 
