@@ -11,31 +11,54 @@
 </header>
 <section>
     <form action="" method="get">
-<fieldset>
-<!--DADOS PESSOAIS-->
+
+<!--<fieldset>
 
 <legend>Dados Pessoais</legend>
 <label for="userName">Nome (Obrigatório)</label>
 <input type="text" name="userName" required>
 <br>
+
 <label for="userAge">Idade</label>
 <input type="number" name="userAge" min="12" max="100" required>
 <br>
+
 <label for="birthDate">Data de nascimento</label>
 <input type="date" name="birthDate">
 <br>
+
 <label for="userEmail">Email (Obrigatório)</label>
 <input type="email" name="userEmail" placeholder="ex: myname@example.com" required>
 <br>
+
 <label for="userPhoneNumber">Telefone</label>
-<input type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="ex: (+351) 912 345 678">
+<input type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="ex: 912 345 678">
 <br>
+
 <label for="userImage">Upload de foto (Opcional)</label>
 <input type="file" accept="image/*" name="userImage">
 <br>
+
+</fieldset>-->
+
+<fieldset>
+<legend>Perfil</legend>
+
+<p>Gênero:</p>
+<input type="radio" name="userGender" value="Feminino">
+<label for="userGender">Feminino</label>
+
+<input type="radio" name="userGender" value="Masculino">
+<label for="userGender">Masculino</label>
+
+<input type="radio" name="userGender" value="notInformed">
+<label for="userGender">Prefiro não informar</label>
+
+
+
+
+
 </fieldset>
-
-
 
 
 
