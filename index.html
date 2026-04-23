@@ -16,29 +16,23 @@
 
 <legend>Dados Pessoais</legend>
 <label for="name">Nome (Obrigatório)</label>
-<input id="name" name="userName" required>
+<input id="name" type="text" name="userName" required>
 <br>
-
 <label for="age">Idade</label>
-<input id="age" name="userAge" min="12" max="100" required>
+<input id="age" type="number" name="userAge" min="12" max="100" required>
 <br>
-
 <label for="birthDate">Data de nascimento</label>
 <input id="birthDate" type="date" name="userBirthDate">
 <br>
-
 <label for="email">Email (Obrigatório)</label>
-<input id="email" name="userEmail" placeholder="ex: myname@example.com" required>
+<input id="email" type="email" name="userEmail" placeholder="ex: myname@example.com" required>
 <br>
-
 <label for="phoneNumber">Telefone</label>
-<input id="phoneNumber" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="ex: 912 345 678">
+<input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="número sem espaços ou hífen">
 <br>
-
 <label for="image">Upload de foto (Opcional)</label>
 <input id="image" type="file" accept="image/*" name="userImage">
 <br>
-
 </fieldset>
 
 <fieldset>
@@ -47,10 +41,8 @@
 <p>Gênero:</p>
 <input id="fem" type="radio" name="userGender" value="Feminino">
 <label for="fem">Feminino</label>
-
 <input id="masc" type="radio" name="userGender" value="Masculino">
 <label for="masc">Masculino</label>
-
 <input id="notInformed" type="radio" name="userGender" value="notInformed">
 <label for="notInformed">Prefiro não informar</label>
 <br>
@@ -114,6 +106,9 @@
     <option value="Samba">
     <option value="Sertanejo">
 </datalist>
+<br>
+<label for="favoriteColor">Cor Favorita</label>
+<input type="color" name="userFavoriteColor" id="favoriteColor">
 
 
 </fieldset>
