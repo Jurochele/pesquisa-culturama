@@ -36,7 +36,8 @@
 <input id="email" type="email" name="userEmail" placeholder="ex: myname@example.com" required>
 <br>
 <label for="phoneNumber">Telefone</label>
-<input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="número sem espaços ou hífen">
+<input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{9}" placeholder="número sem espaços ou hífen" aria-describedby="phoneHelp" >
+<small id="phoneHelp">Preencha com 9 dígitos no formato: número sem espaços ou hífen</small>
 <br>
 <label for="image">Upload de foto (Opcional)</label>
 <input id="image" type="file" accept="image/*" name="userImage">
