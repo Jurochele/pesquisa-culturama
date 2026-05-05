@@ -26,7 +26,7 @@
 <label for="name">Nome (Obrigatório)</label>
 <input id="name" type="text" name="userName" required>
 <br>
-<label for="age">Idade</label>
+<label for="age">Idade (Obrigatório)</label>
 <input id="age" type="number" name="userAge" min="12" max="100" required>
 <br>
 <label for="birthDate">Data de nascimento</label>
@@ -40,7 +40,8 @@
 <small id="phoneHelp">Preencha com 9 dígitos no formato: número sem espaços ou hífen</small>
 <br>
 <label for="image">Upload de foto (Opcional)</label>
-<input id="image" type="file" accept="image/*" name="userImage">
+<input id="image" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+<small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
 <br>
 </fieldset>
 
